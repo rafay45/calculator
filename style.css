@@ -19,7 +19,10 @@ body{
   align-items: center;
   justify-content: center;
 }
+
 .innerOutput{
+    text-align: end;
+    position: relative;
     font-family: sans-serif;
     color: white;
     font-weight: bold;
