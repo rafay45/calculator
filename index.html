@@ -10,33 +10,33 @@
 <body>
     <div class="calculator">
       <div class="output">
-        <div class="innerOutput"></div>
-        
+        <input type="text" class="innerOutput" id="output" disabled>
       </div>
       <div class="buttons">
         <div class="innerButtons">
-            <button class="light-gray">AC</button>
-            <button class="light-gray">DEL</button>
-            <button class="light-gray">%</button>
-            <button class="orange">&divide;</button>
-            <button class="dark-gray">9</button>
-            <button class="dark-gray">8</button>
-            <button class="dark-gray">7</button>
-            <button class="orange">x</button>
-            <button class="dark-gray">6</button>
-            <button class="dark-gray">5</button>
-            <button class="dark-gray">4</button>
-            <button class="orange">-</button>
-            <button class="dark-gray">3</button>
-            <button class="dark-gray">2</button>
-            <button class="dark-gray">1</button>
-            <button class="orange">+</button>
-            <button class="dark-gray">00</button>
-            <button class="dark-gray">0</button>
-            <button class="dark-gray">.</button>
-            <button class="orange">=</button>
+            <button onclick="onOff()" class="light-gray">on/off</button>
+            <button onclick="clearDisplay()" class="light-gray">AC</button>
+            <button onclick="deleteDisplay()" class="light-gray">DEL</button>
+            <button onclick="appendValue('/')" class="orange">&divide;</button>
+            <button onclick="appendValue('9')" class="dark-gray">9</button>
+            <button onclick="appendValue('8')" class="dark-gray">8</button>
+            <button onclick="appendValue('7')" class="dark-gray">7</button>
+            <button onclick="appendValue('*')" class="orange">x</button>
+            <button onclick="appendValue('6')" class="dark-gray">6</button>
+            <button onclick="appendValue('5')" class="dark-gray">5</button>
+            <button onclick="appendValue('4')" class="dark-gray">4</button>
+            <button onclick="appendValue('-')" class="orange">-</button>
+            <button onclick="appendValue('3')" class="dark-gray">3</button>
+            <button onclick="appendValue('2')" class="dark-gray">2</button>
+            <button onclick="appendValue('1')" class="dark-gray">1</button>
+            <button onclick="appendValue('+')" class="orange">+</button>
+            <button onclick="appendValue('00')" class="dark-gray">00</button>
+            <button onclick="appendValue('0')" class="dark-gray">0</button>
+            <button onclick="appendValue('.')" class="dark-gray">.</button>
+            <button onclick="equal('=')" class="orange">=</button>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
