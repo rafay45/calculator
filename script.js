@@ -14,7 +14,9 @@ function appendValue(event) {
         display.value = "";
     } else if (display.value === "0") {
         display.value = ""
-    } else {
+    } else if(display.value === "syntax error") {
+        display.value = ""
+    }else{
         display.value += event
     }
 }
@@ -41,7 +43,7 @@ function equal() {
         try {
             display.value = eval(display.value);
         } catch (error) {
-            alert("Invalid Calculation!");
+            display.value = "syntax error"
         }
     }
 
