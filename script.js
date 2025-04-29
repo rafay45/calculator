@@ -1,22 +1,20 @@
 let display = document.getElementById('output');
-display.value = "off"
 function onOff() {
-    if(display.value === "off"){
-        display.value = "on";
-    }else{
-        display.value = "off"
+    if (display.style.backgroundColor = "rgb(32, 32, 32)") {
+        display.style.backgroundColor = "rgb(48, 47, 47)";
+    }
+    else if (display.style.backgroundColor = "rgb(48, 47, 47)") {
+        display.style.backgroundColor = "rgb(32, 32, 32)";
     }
 }
 function appendValue(event) {
-    if (display.value === "off") {
-        display.value = "off"
-    } else if (display.value === "on") {
-        display.value = "";
+    if (display.style.backgroundColor = "rgb(32, 32, 32)") {
+        display.style.backgroundColor = "rgb(48, 47, 47)";
     } else if (display.value === "0") {
         display.value = ""
-    } else if(display.value === "syntax error") {
+    } else if (display.value === "syntax error") {
         display.value = ""
-    }else{
+    } else {
         display.value += event
     }
 }
