@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <p><b>Note </b>: When you turn on a calculator or AC or if a syntax error occurs, press the first key twice.</p>
+  <h1 style="color: white;">CALCULATOR</h1>
   <div class="portion">
     <div class="calculator">
       <div class="output">
@@ -18,7 +18,7 @@
       </div>
       <div class="buttons">
         <div class="innerButtons">
-          <button onclick="onOff()" class="light-gray">On/off</button>
+          <button onclick="on()" class="light-gray">On</button>
           <button onclick="clearDisplay()" class="light-gray">AC</button>
           <button onclick="deleteDisplay()" class="light-gray">DEL</button>
           <button onclick="appendValue('/')" class="orange">&divide;</button>
@@ -34,7 +34,7 @@
           <button onclick="appendValue('2')" class="dark-gray">2</button>
           <button onclick="appendValue('1')" class="dark-gray">1</button>
           <button onclick="appendValue('+')" class="orange">+</button>
-          <button onclick="appendValue('00')" class="dark-gray">00</button>
+          <button onclick="off()" class="dark-gray">Off</button>
           <button onclick="appendValue('0')" class="dark-gray">0</button>
           <button onclick="appendValue('.')" class="dark-gray">.</button>
           <button onclick="equal('=')" class="orange">=</button>

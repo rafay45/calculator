@@ -2,6 +2,7 @@ body {
     text-align: center;
     align-content: center;
     height: 90vh;
+    background-color: rgb(53, 3, 3);
 }
 
 .portion {
@@ -14,8 +15,8 @@ body {
 
 .calculator {
     background-color: black;
+    border: 6px solid black; 
     border-radius: 15px;
-    border: 1px solid;
     height: 70vh;
     width: 25vw;
 }
